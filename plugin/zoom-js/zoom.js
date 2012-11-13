@@ -1,7 +1,7 @@
 // Custom reveal.js integration
 (function(){
 	document.querySelector( '.reveal' ).addEventListener( 'click', function( event ) {
-		if( event.altKey ) {
+		if( event.ctrlKey ) {
 			event.preventDefault();
 			zoom.to({ element: event.target, pan: false });
 		}
